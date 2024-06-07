@@ -3,6 +3,7 @@ import { Menubar, Slider } from '@components'
 import { MoonIcon, SunIcon, DesktopIcon } from '@radix-ui/react-icons'
 import { useTheme, useVolume } from '@core/context'
 import { useHotkeys } from 'react-hotkeys-hook'
+import { clsx } from 'clsx'
 
 const BrowserWindow: React.FC = () => {
     const { setTheme } = useTheme()
@@ -31,7 +32,14 @@ const BrowserWindow: React.FC = () => {
     }, [])
 
     return (
-        <header className="browse-window sticky top-0 z-50 flex h-8 border-b border-accent bg-background px-20">
+        <header
+            className={clsx(
+                'browse-window sticky top-0 z-50 flex h-8 border-b border-accent bg-background',
+                {
+                    'px-20': window.electron.platform.isMac,
+                    'px-4': window.electron.platform.isWindows,
+                },
+            )}>
             <Menubar className="browse-window-menu">
                 <Menubar.Menu>
                     <Menubar.Trigger>Settings</Menubar.Trigger>
