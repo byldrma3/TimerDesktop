@@ -4,7 +4,7 @@
 
 ## MacOS
 
-[timer/download →](./build/Timer-1.0.0-arm64.dmg)
+[timer/download →](https://drive.google.com/file/d/1qT4JyeDrCSSsIpiunEgPx_FKdX_xpChM/view?usp=sharing)
 
 An Electron application with React and TypeScript
 
