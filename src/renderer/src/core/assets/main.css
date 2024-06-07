@@ -1,0 +1,10 @@
+@import 'base.css';
+@import 'font.css';
+
+* {
+  -webkit-user-select: none;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}

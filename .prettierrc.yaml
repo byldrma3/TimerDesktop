@@ -1,0 +1,14 @@
+arrowParens: avoid
+bracketSameLine: true
+bracketSpacing: true
+quoteProps: consistent
+singleQuote: true
+semi: false
+tabWidth: 4
+printWidth: 80
+trailingComma: all
+useTabs: false
+jsxSingleQuote: false
+jsxBracketSameLine: false
+plugins:
+    - prettier-plugin-tailwindcss
